@@ -34,8 +34,8 @@ func (a byIP) Less(i, j int) bool {
 	return false
 }
 
-/* Sort4 returns a sorted slice of IPv4 addresses with optional port numbers.
-Strings which are not IPv4 addressses are discarded */
+//Sort4 returns a sorted slice of IPv4 addresses with optional port numbers.
+//Strings which are not IPv4 addressses are discarded.
 func Sort4(a []string) []string {
 	/* Make the regex the first time it's used */
 	if nil == re {
